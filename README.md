@@ -33,6 +33,13 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@Bondok6](https://github.com/Bondok6)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+
+👤 David Vergaray
+
+- GitHub:   [@Yothu](https://github.com/Yothu)
+- Twiter:   [@Daivhy](https://twitter.com/Daivhy)
+- LinkedIn: [David Vergaray](https://www.linkedin.com/in/david-vergaray-almontes-051a11127/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
