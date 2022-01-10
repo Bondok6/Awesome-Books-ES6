@@ -1,0 +1,279 @@
+/* Simple Normalization */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+::selection {
+  background-color: #a1a1a1a1;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  text-align: center;
+  transition: 0.2s;
+  margin-block: 2rem;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+h2:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem #000;
+}
+
+/* ************ Start Header&footer Section ********** */
+header,
+footer {
+  width: 80vw;
+  height: 8vh;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+
+.list-item {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.list-item:not(:last-child) {
+  border-right: 3px solid #000;
+  padding-right: 4rem;
+}
+
+.list-item:hover {
+  text-shadow: 0.5rem 1rem 2rem #000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+}
+
+.navMenu {
+  display: none;
+}
+
+/************** Start Books Section ************/
+.books-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.books-container {
+  width: 100rem;
+  height: 35rem;
+  border: 3px solid #222;
+  padding-block: 1rem;
+  overflow-y: scroll;
+}
+
+.books-container::-webkit-scrollbar {
+  width: 1.7rem;
+}
+
+.books-container::-webkit-scrollbar-track {
+  background-color: #5555;
+}
+
+.books-container::-webkit-scrollbar-thumb {
+  background-color: #777;
+  border-radius: 2rem;
+}
+
+.books-container::-webkit-scrollbar-track:hover {
+  background-color: #555;
+}
+
+.books-container::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+}
+
+.book {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.book:not(:last-child)::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.book-details {
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.remove-btn {
+  padding: 0.4rem 1rem;
+  margin-right: 2rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.6rem;
+  background: none;
+  outline: none;
+  border: 2px solid #222;
+  box-shadow: 0.5rem 0.5rem 1rem #333;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+/************** Start  Books Section ************/
+
+/************** Start  Data entry Section ************/
+.data-entry-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.form {
+  width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+input {
+  display: block;
+  height: 4rem;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 2rem;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.add-btn {
+  width: 7rem;
+  height: 4rem;
+  align-self: flex-end;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 2rem;
+  background: none;
+  outline: none;
+  border: 2px solid #222;
+  box-shadow: 1.5rem 1rem 1rem #333;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.add-btn:hover,
+.remove-btn:focus,
+.remove-btn:hover {
+  transform: scale(1);
+  background-color: #333;
+  color: #fff;
+}
+
+/************** End  Data entry Section ************/
+
+/* ************ Start Contact Section ************ */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact-section p {
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.contact-section li {
+  font-size: 2.5rem;
+}
+
+/* ************ End Contact Section ************ */
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 45%;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .book {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  input {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .add-btn {
+    align-self: center;
+  }
+}
+
+/* used in js */
+.hidden {
+  display: none;
+}
+
+.error,
+.success {
+  padding: 1rem 2rem;
+  margin-top: 5rem;
+  font-size: 2.5rem;
+}
+
+.error {
+  color: #d8000c;
+  background-color: #ffd2d2;
+}
+
+.success {
+  color: #4f8a10;
+  background-color: #dff2bf;
+}
