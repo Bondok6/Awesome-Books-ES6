@@ -1,59 +1,44 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome-Books-ES6
 
-> One paragraph statement about the project.
+> ### In this project, I built a basic website that allows users to add/remove books from a list.
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+https://user-images.githubusercontent.com/45231276/148695534-f89a450a-6a6b-4f45-b180-1c27b0161bb7.mp4
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML - HTML5
+- CSS - CSS3
+- JavaScript - OOP
+
+## Additional tools
+
+- Google fonts
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+[Awesome-Books](https://bondok6.github.io/Awesome-Books-ES6/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+`git clone git@github.com:Bondok6/Awasome-Books.git`
 
 ## Authors
 
-👤 **Author1**
+👤 **Kyrillos Hany**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- GitHub: [@Bondok6](https://github.com/Bondok6)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **David Vergaray**
+
+- GitHub:   [@Yothu](https://github.com/Yothu)
+- Twiter:   [@Daivhy](https://twitter.com/Daivhy)
+- LinkedIn: [David Vergaray](https://www.linkedin.com/in/david-vergaray-almontes-051a11127/)
 
 ## 🤝 Contributing
 
@@ -64,12 +49,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
