@@ -9,3 +9,4 @@ export const listSection = document.querySelector('.books-section');
 export const addNewSection = document.querySelector('.data-entry-section');
 export const contactSection = document.querySelector('.contact-section');
 export const [listNav, addNewNav, contactNav] = document.querySelectorAll('.list-item');
+export const dateElement = document.getElementById('currentTimeDate');

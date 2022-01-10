@@ -1,7 +1,7 @@
 import * as constE from './constantElement.js';
 
 // Class of Books
-export default class Books {
+class Books {
   static books = [];
 
   constructor(id, title, author) {
@@ -53,3 +53,5 @@ export default class Books {
     });
   }
 }
+
+export default Books;

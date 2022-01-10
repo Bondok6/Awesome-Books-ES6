@@ -1,8 +1,8 @@
-import * as bookC from './bookClass.js';
+import Books from './bookClass.js';
 import * as constE from './constantElement.js';
 
-export const CheckDuplicate = function (title, author) {
-  const b = bookC.Books.books.filter(
+const CheckDuplicate = (title, author) => {
+  const b = Books.books.filter(
     (book) => title === book.title && author === book.author,
   );
 
@@ -11,8 +11,9 @@ export const CheckDuplicate = function (title, author) {
     constE.successMsg.classList.add('hidden');
     return true;
   }
-
   constE.errorMsg.classList.add('hidden');
   constE.successMsg.classList.remove('hidden');
   return false;
 };
+
+export default CheckDuplicate;
