@@ -1,20 +1,13 @@
 import * as bookC from '/modules/bookClass.js';
-import * as constE from '/modules/constantElement.js';
+import * as constE  from '/modules/constantElement.js';
+import * as checkD from '/modules/checkDuplicate.js';
+
+import { DateTime } from "./luxon.js";
 
 
-const CheckDuplicate = function (title, author) {
-  const b = bookC.Books.books.filter(
-    (book) => title === book.title && author === book.author,
-  );
-  if (b.length !== 0) {
-    constE.errorMsg.classList.remove('hidden');
-    constE.successMsg.classList.add('hidden');
-    return true;
-  }
-  constE.errorMsg.classList.add('hidden');
-  constE.successMsg.classList.remove('hidden');
-  return false;
-};
+console.log(DateTime.now());
+const { month, day, year, hour } = DateTime.now().c;
+console.log(month,day,year,hour);
 
 let id;
 // Add: when I click on Add button
@@ -25,7 +18,7 @@ constE.addBtn.addEventListener('submit', (e) => {
   const title = constE.titleInput.value;
   const author = constE.authorInput.value;
 
-  if (CheckDuplicate(title, author)) return;
+  if (checkD.CheckDuplicate(title, author)) return;
 
   const newBook = new bookC.Books(id, title, author);
   newBook.addBook();
@@ -54,3 +47,4 @@ constE.contactNav.addEventListener('click', () => {
   constE.listSection.classList.add('hidden');
   constE.contactSection.classList.remove('hidden');
 });
+
