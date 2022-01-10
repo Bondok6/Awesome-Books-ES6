@@ -28,13 +28,13 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Kyrillos Hany**
 
 - GitHub: [@Bondok6](https://github.com/Bondok6)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 
-👤 David Vergaray
+👤 **David Vergaray**
 
 - GitHub:   [@Yothu](https://github.com/Yothu)
 - Twiter:   [@Daivhy](https://twitter.com/Daivhy)
