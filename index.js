@@ -1,17 +1,20 @@
-import * as bookC from '/modules/bookClass.js';
-import * as constE  from '/modules/constantElement.js';
-import * as checkD from '/modules/checkDuplicate.js';
+import * as bookC from "/modules/bookClass.js";
+import * as constE from "/modules/constantElement.js";
+import * as checkD from "/modules/checkDuplicate.js";
 
 import { DateTime } from "./luxon.js";
 
+const time = () => {
+  const dateT = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+  constE.dateElement.innerHTML = dateT;
+  setTimeout(time, 1000);
+};
 
-console.log(DateTime.now());
-const { month, day, year, hour } = DateTime.now().c;
-console.log(month,day,year,hour);
+time();
 
 let id;
 // Add: when I click on Add button
-constE.addBtn.addEventListener('submit', (e) => {
+constE.addBtn.addEventListener("submit", (e) => {
   e.preventDefault();
 
   id = `${Date.now()}`.slice(-10);
@@ -30,21 +33,20 @@ window.onload = () => {
 };
 
 // Sections Navigation
-constE.listNav.addEventListener('click', () => {
-  constE.addNewSection.classList.add('hidden');
-  constE.contactSection.classList.add('hidden');
-  constE.listSection.classList.remove('hidden');
+constE.listNav.addEventListener("click", () => {
+  constE.addNewSection.classList.add("hidden");
+  constE.contactSection.classList.add("hidden");
+  constE.listSection.classList.remove("hidden");
 });
 
-constE.addNewNav.addEventListener('click', () => {
-  constE.contactSection.classList.add('hidden');
-  constE.listSection.classList.add('hidden');
-  constE.addNewSection.classList.remove('hidden');
+constE.addNewNav.addEventListener("click", () => {
+  constE.contactSection.classList.add("hidden");
+  constE.listSection.classList.add("hidden");
+  constE.addNewSection.classList.remove("hidden");
 });
 
-constE.contactNav.addEventListener('click', () => {
-  constE.addNewSection.classList.add('hidden');
-  constE.listSection.classList.add('hidden');
-  constE.contactSection.classList.remove('hidden');
+constE.contactNav.addEventListener("click", () => {
+  constE.addNewSection.classList.add("hidden");
+  constE.listSection.classList.add("hidden");
+  constE.contactSection.classList.remove("hidden");
 });
-

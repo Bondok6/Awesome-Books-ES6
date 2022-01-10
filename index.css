@@ -51,7 +51,7 @@ footer {
   padding: 0 2rem;
 }
 
-.date{
+.date {
   display: flex;
   flex-direction: row-reverse;
   width: 80vw;

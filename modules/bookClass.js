@@ -1,4 +1,4 @@
-import * as constE from './constantElement.js';
+import * as constE from "./constantElement.js";
 
 // Class of Books
 export class Books {
@@ -12,7 +12,7 @@ export class Books {
 
   // Data Storage
   static storage(books) {
-    localStorage.setItem('books', JSON.stringify(books));
+    localStorage.setItem("books", JSON.stringify(books));
   }
 
   addBook() {
@@ -20,17 +20,17 @@ export class Books {
     Books.storage(Books.books);
     Books.displayBook();
 
-    constE.titleInput.value = '';
-    constE.authorInput.value = '';
+    constE.titleInput.value = "";
+    constE.authorInput.value = "";
   }
 
   // Display Book
   static displayBook() {
-    if (JSON.parse(localStorage.getItem('books'))) {
-      Books.books = JSON.parse(localStorage.getItem('books'));
+    if (JSON.parse(localStorage.getItem("books"))) {
+      Books.books = JSON.parse(localStorage.getItem("books"));
     }
 
-    let itemHtml = '';
+    let itemHtml = "";
     Books.books.forEach((book) => {
       itemHtml += `
       <li class="book" id="${book.id}">
@@ -43,8 +43,8 @@ export class Books {
     constE.container.innerHTML = itemHtml;
 
     // Remove: when I click on Remove button
-    document.querySelectorAll('.remove-btn').forEach((btn) => {
-      btn.addEventListener('click', (e) => {
+    document.querySelectorAll(".remove-btn").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
         const targetId = e.target.parentElement.id;
         Books.books = Books.books.filter((book) => book.id !== targetId);
         Books.storage(Books.books);
@@ -53,4 +53,3 @@ export class Books {
     });
   }
 }
-  

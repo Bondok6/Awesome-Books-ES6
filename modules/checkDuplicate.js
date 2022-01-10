@@ -1,16 +1,16 @@
-import * as bookC from './bookClass.js';
-import * as constE  from './constantElement.js';
+import * as bookC from "./bookClass.js";
+import * as constE from "./constantElement.js";
 
-export const CheckDuplicate = function (title, author) {
+export const CheckDuplicate = (title, author) => {
   const b = bookC.Books.books.filter(
-    (book) => title === book.title && author === book.author,
+    (book) => title === book.title && author === book.author
   );
   if (b.length !== 0) {
-    constE.errorMsg.classList.remove('hidden');
-    constE.successMsg.classList.add('hidden');
+    constE.errorMsg.classList.remove("hidden");
+    constE.successMsg.classList.add("hidden");
     return true;
   }
-  constE.errorMsg.classList.add('hidden');
-  constE.successMsg.classList.remove('hidden');
+  constE.errorMsg.classList.add("hidden");
+  constE.successMsg.classList.remove("hidden");
   return false;
 };
