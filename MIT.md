@@ -1,4 +1,4 @@
-## Copyright 2021, [David, Oyelakin, Kyrillos]
+## Copyright 2022, [David, Oyelakin, Kyrillos]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this [Awesome-Books-Es6 website] and associated documentation files, to deal in the [Awesome-Books-Es6 website] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [Awesome-Books-Es6 website], and to permit persons to whom the [Awesome-Books-Es6 website] is furnished to do so, subject to the following conditions:
 
